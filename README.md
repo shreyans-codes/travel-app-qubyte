@@ -1,4 +1,4 @@
-# travel_app
+# Qubyte Travel Application
 
 A new Flutter project.
 
