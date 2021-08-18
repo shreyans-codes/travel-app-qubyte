@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 import 'package:travel_app/model/destination_model.dart';
 import 'package:travel_app/model/package_model.dart';
+import 'package:travel_app/services/authentication_services.dart';
 
 class Home extends StatefulWidget {
   final Destination? destination;
@@ -24,6 +26,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    final _authService = Provider.of<AuthService>(context);
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -66,16 +69,12 @@ class _HomeState extends State<Home> {
                     Row(
                       children: <Widget>[
                         IconButton(
-                          icon: Icon(Icons.search),
-                          iconSize: 30.0,
-                          color: Colors.black,
-                          onPressed: () => Navigator.pop(context),
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.add_alert_rounded),
+                          icon: Icon(Icons.exit_to_app),
                           iconSize: 25.0,
                           color: Colors.black,
-                          onPressed: () => Navigator.pop(context),
+                          onPressed: () async {
+                            await _authService.signOut();
+                          },
                         ),
                       ],
                     ),

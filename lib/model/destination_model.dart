@@ -52,7 +52,7 @@ List<Package> packages2 = [
   ),
 ];
 
-List<Destination> destination = [
+List<Destination> destinations = [
   Destination(
     imageUrl:
         "https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
@@ -62,7 +62,7 @@ List<Destination> destination = [
   ),
   Destination(
     imageUrl:
-        "https://images.unsplash.com/photo-1598977054780-2dc700fdc9d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+        "https://images.unsplash.com/photo-1607960346367-8ef3b7a108e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     city: "New Delhi",
     country: "India",
     packages: packages2,

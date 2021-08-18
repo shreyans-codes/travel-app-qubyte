@@ -5,7 +5,9 @@ import 'package:travel_app/model/package_model.dart';
 import 'package:travel_app/model/user_model.dart';
 import 'package:travel_app/screens/home/home.dart';
 import 'package:travel_app/screens/login_screen.dart';
+import 'package:travel_app/screens/packages/package_screen.dart';
 import 'package:travel_app/services/authentication_services.dart';
+import 'package:travel_app/services/builder_screen.dart';
 
 class RouteService extends StatelessWidget {
   const RouteService({Key? key}) : super(key: key);
@@ -43,11 +45,10 @@ class RouteService extends StatelessWidget {
       builder: (_, AsyncSnapshot<User?> snapshot) {
         if (snapshot.connectionState == ConnectionState.active) {
           final User? user = snapshot.data;
-          return user == null
-              ? LoginScreen()
-              : Home(
-                  destination: destination,
-                );
+          return user == null ? LoginScreen() : BuilderScreen();
+          // : Home(
+          //     destination: destination,
+          //   );
         } else {
           return Scaffold(
             body: Center(
