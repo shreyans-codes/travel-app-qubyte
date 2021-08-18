@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125242734179",
+    "project_id": "travel-app-qubyte",
+    "storage_bucket": "travel-app-qubyte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125242734179:android:40b3f066304379abc26a56",
+        "android_client_info": {
+          "package_name": "com.example.travel_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125242734179-l7au70u1geoi8v7a1gscbs6i89460bv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdK9xMwHpVDQ9XUpFQcsnz3-nxUAiRb6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125242734179-l7au70u1geoi8v7a1gscbs6i89460bv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
